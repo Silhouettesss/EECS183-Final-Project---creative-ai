@@ -178,7 +178,7 @@ def runMusicGenerator(models, songName):
     Effects:  runs the music generator as following the details in the spec.
     """
 
-    possiblePitches = random.choice(KEY_SIGNATURES)
+    possiblePitches = KEY_SIGNATURES[random.choice(KEY_SIGNATURES.keys())]
     
     verse = generateMusicalSentence(models, 30, possiblePitches)
     
